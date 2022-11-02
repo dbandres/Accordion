@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Faq from './components/faq/Faq';
+import Question from './components/faq/Question';
+import {questions} from "./components/faq/data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Faq/>
+      {
+        questions.map((question) => {
+          return <Question question={question.question} answer={question.answer}/>
+        })
+      }
     </div>
   );
 }

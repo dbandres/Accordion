@@ -1,0 +1,28 @@
+.faq_sec{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.container, .faq{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    
+}
+
+.faqs_title{
+    margin-top: -.01rem;
+}
+
+.text{
+    font-size: small;
+    font-style: oblique;
+}
+
+.title{
+    text-align: center;
+}
